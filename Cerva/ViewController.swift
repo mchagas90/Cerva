@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         quantidadeField.delegate = self
         precoField.delegate = self
-        
+
         resultadosTextView.isEditable = false;
     }
 
@@ -32,9 +32,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clicouAcao(_ sender: Any) {
-        let preco: Double = Double(precoField.text!) ?? 0
+        // evitar erros com preco vindo com virgula
+        let preco: Double = Double(precoField.text!.replacingOccurrences(of: ",", with: ".")) ?? 0
         let quantidade: Int = Int(quantidadeField.text!) ?? 0
-        
+
         if preco == 0.0 || quantidade == 0 {
             return
         }
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
             ["preco": preco, "quantidade": quantidade, "precoLitro": precoLitro]
         )
         ordernarMelhorPreco()
-        
+
         limparCampos()
     }
 
