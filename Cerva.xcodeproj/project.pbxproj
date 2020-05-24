@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B441BB3A247AF35800037B9C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441BB39247AF35800037B9C /* Double.swift */; };
+		B441BB3C247AFB4600037B9C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B441BB3B247AFB4600037B9C /* .gitignore */; };
 		B4CC3F042479B11300F183AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC3F032479B11300F183AB /* AppDelegate.swift */; };
 		B4CC3F062479B11300F183AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC3F052479B11300F183AB /* SceneDelegate.swift */; };
 		B4CC3F082479B11300F183AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CC3F072479B11300F183AB /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B441BB37247ADE0E00037B9C /* Console.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Console.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B441BB39247AF35800037B9C /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		B441BB3B247AFB4600037B9C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B4CC3F002479B11300F183AB /* Cerva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cerva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CC3F032479B11300F183AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CC3F052479B11300F183AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +42,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B441BB38247AF33B00037B9C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B441BB39247AF35800037B9C /* Double.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		B4CC3EF72479B11200F183AB = {
 			isa = PBXGroup;
 			children = (
+				B441BB37247ADE0E00037B9C /* Console.playground */,
 				B4CC3F022479B11300F183AB /* Cerva */,
 				B4CC3F012479B11300F183AB /* Products */,
+				B441BB3B247AFB4600037B9C /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,7 @@
 		B4CC3F022479B11300F183AB /* Cerva */ = {
 			isa = PBXGroup;
 			children = (
+				B441BB38247AF33B00037B9C /* Lib */,
 				B4CC3F032479B11300F183AB /* AppDelegate.swift */,
 				B4CC3F052479B11300F183AB /* SceneDelegate.swift */,
 				B4CC3F072479B11300F183AB /* ViewController.swift */,
@@ -125,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B441BB3C247AFB4600037B9C /* .gitignore in Resources */,
 				B4CC3F102479B11400F183AB /* LaunchScreen.storyboard in Resources */,
 				B4CC3F0D2479B11400F183AB /* Assets.xcassets in Resources */,
 				B4CC3F0B2479B11300F183AB /* Main.storyboard in Resources */,
@@ -141,6 +158,7 @@
 				B4CC3F082479B11300F183AB /* ViewController.swift in Sources */,
 				B4CC3F042479B11300F183AB /* AppDelegate.swift in Sources */,
 				B4CC3F062479B11300F183AB /* SceneDelegate.swift in Sources */,
+				B441BB3A247AF35800037B9C /* Double.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

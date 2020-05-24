@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         let preco: Double = Double(precoField.text!.replacingOccurrences(of: ",", with: ".")) ?? 0
         let quantidade: Int = Int(quantidadeField.text!) ?? 0
 
-        if preco == 0.0 || quantidade == 0 {
+        if preco == 0 || quantidade == 0 {
             return
         }
 
@@ -63,11 +63,10 @@ class ViewController: UIViewController {
             let preco = resultado["preco"] as! Double
             let quantidade: Int = resultado["quantidade"] as! Int
             let precoLitro: Double = resultado["precoLitro"] as! Double
-            let precoFormatado = String(format: "$%.02f", precoLitro)
 
             let index = index + 1
 
-            resultados += "\(index) - ml: \(quantidade), preço: \(preco) - R$: \(precoFormatado)\n\n"
+            resultados += "\(index) - ml: \(quantidade), preço: \(preco.dinheiroString) - \(precoLitro.dinheiroString)\n\n"
         }
         return resultados
     }
