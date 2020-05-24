@@ -41,16 +41,32 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0TN-am-wrF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Calcular"/>
                                 <connections>
                                     <action selector="clicouAcao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ypc-P1-stQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogd-tq-s0K">
+                                <rect key="frame" x="51" y="243" width="312" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gZw-e8-ieu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Reiniciar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicouReiniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iAa-tc-oD5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ogd-tq-s0K" firstAttribute="leading" secondItem="Rdh-eN-aTc" secondAttribute="leading" id="1Go-ya-BnK"/>
+                            <constraint firstItem="Ogd-tq-s0K" firstAttribute="trailing" secondItem="Rdh-eN-aTc" secondAttribute="trailing" id="5aH-hE-aDB"/>
                             <constraint firstItem="UMa-xs-OX0" firstAttribute="centerX" secondItem="Rdh-eN-aTc" secondAttribute="centerX" id="Aiu-9X-vg8"/>
                             <constraint firstItem="Rdh-eN-aTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="BxV-Az-xU6"/>
                             <constraint firstItem="FaN-ps-IHn" firstAttribute="trailing" secondItem="UMa-xs-OX0" secondAttribute="trailing" id="MhQ-aP-7KP"/>
@@ -60,6 +76,7 @@
                             <constraint firstItem="FaN-ps-IHn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="gYm-EF-rc8"/>
                             <constraint firstItem="FaN-ps-IHn" firstAttribute="leading" secondItem="UMa-xs-OX0" secondAttribute="leading" id="gbs-3U-yFV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MJN-3i-IiB" secondAttribute="bottom" constant="59" id="hBi-k9-XOJ"/>
+                            <constraint firstItem="Ogd-tq-s0K" firstAttribute="top" secondItem="Rdh-eN-aTc" secondAttribute="bottom" constant="19" id="tji-89-mOa"/>
                             <constraint firstItem="FaN-ps-IHn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uj3-eV-BZ7"/>
                             <constraint firstItem="UMa-xs-OX0" firstAttribute="top" secondItem="FaN-ps-IHn" secondAttribute="bottom" constant="19" id="xaI-BM-l7u"/>
                             <constraint firstItem="FaN-ps-IHn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="z48-Br-xav"/>
@@ -74,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+            <point key="canvasLocation" x="137.68115942028987" y="103.53260869565219"/>
         </scene>
     </scenes>
 </document>
